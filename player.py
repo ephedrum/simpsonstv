@@ -14,6 +14,9 @@ def getVideos():
     for file in os.listdir(directory):
         if file.lower().endswith('.mp4'):
             videos.append(os.path.join(directory, file))
+    for file in os.listdir(directory):
+        if file.lower().endswith('.m4v'):
+            videos.append(os.path.join(directory, file))
 
 
 def playVideos():
